@@ -12,11 +12,13 @@
 :root{
     --Color-gris_claro: #DADADA; 
     --Color-blanco-gris: #F0F0F2;
-    --Color-negro: #0C0D0F; 
+    --Color-gris-oscuro: #3d3d3d;
+    --Color-negro: #050505; 
     --Color-negro_medio: #0D0D0D;  
     --Color-coral: #FF0951;
     --Color-rojo: #FF0023;
     --Color-violeta: #542BE3;
+    --Color-azul-corp:#006eff;
     
 }
 
