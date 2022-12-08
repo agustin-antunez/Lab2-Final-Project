@@ -3,10 +3,73 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width", initial-scale=1.0>
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="css/estilos_generales.css">
+        <link rel="stylesheet" href="css/estilos_index.css">
+        <script src="https://kit.fontawesome.com/b039591234.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
         <title>Proyecto Final</title>
     </head>
     <body>
-        
+        <header>
+            <button><i class="fa-solid fa-circle-arrow-left"></i></button>
+            <div>
+                <h1>Turbo Fitness</h1>
+            </div>
+                <button><i class="fa-solid fa-circle-arrow-right"></i></button>
+        </header>
+        <div id="view-container">
+            <nav>
+                <a href=""><i class="fa-solid fa-circle-user"></i></a>
+                <a href=""><i class="fa-solid fa-bell"></i></a>
+                <a href=""><i class="fa-solid fa-user-group"></i></a>
+                <a href=""><i class="fa-regular fa-calendar-days"></i></a>
+                <a href=""><i class="fa-solid fa-ranking-star"></i></a>
+                <a href=""><i class="fa-solid fa-gear"></i></a>
+            </nav>
+            <main>
+                <div id="main-charts">
+                    <canvas id="chart"></canvas>
+                </div>
+                <div>
+                    <canvas id="chart2"></canvas>
+                </div>
+                <div>
+                    <canvas class="chart"></canvas>
+                </div>
+                <div>
+                    <div>
+                        <p></p>
+                        <i class="fa-solid fa-face-laugh"></i>
+                    </div>
+                    <div>
+                        <p></p>
+                        <i class="fa-solid fa-face-meh"></i></i>
+                    </div>
+                    <div>
+                        <p></p>
+                        <i class="fa-solid fa-face-tired"></i>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div>
+                <div id="footer-links">
+                    <a href="https://github.com/agustin-antunez" title="🔥Antunez Agustin Github🔥" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    <a href="https://github.com/agustin-antunez/Lab2-Final-Project" title="The Repo 💜" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/camiloCanclini" title="🔥Canclini Camilo Github🔥" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                </div>
+                <p>
+                    This page was development by Antunez Agustin and Canclini Camilo. Turbo Fitness is a  web aplication made it for view and manage the fitness training of an user, it allow see charts with different kinds of data, also it has a menu from which the user can change the personal information of the user account. This aplication is in early access :P. This is the final project for 'Laboratorio de Computacion II'. We will adjunt the link of the github repository, and our github accounts.&lt3
+                </p>
+            </div>
+            <div>
+                <a href="https://www.frbb.utn.edu.ar/frbb/index.php" target="_blank">
+                    <img src="img/utn-logo.png" alt="logo de la UTN">
+                </a>
+            </div>
+        </footer>
     </body>
+    <script src="scripts/chart.js"></script>
 </html>
