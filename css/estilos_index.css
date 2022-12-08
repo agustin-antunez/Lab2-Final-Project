@@ -9,6 +9,7 @@ main{
 }
 main > div{
     display: flex;
+    grid-auto-flow: dense;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -16,9 +17,9 @@ main > div{
     box-shadow: inset 2px 2px 80px rgba(255, 255, 255, 0.123);
     border: 1px outset #9c5af1;
     border-radius: 20px;
+    min-width: 300px;
     flex-grow: 1;
-    min-height: 400px;
-    min-width: 400px;
+    height: 250px;
     background-color: rgba(51, 51, 51, 0.425);
     position: relative;
 }
@@ -26,10 +27,11 @@ main > div{
     display: flex;
     justify-content: space-evenly;
     flex-basis: none;
+    max-width: none;
     width: 100%;
 }
 canvas{
     margin: 0;
     padding: 0;
-    max-width: 600%;
+    object-fit: contain;
 }

@@ -2,6 +2,10 @@ const ctx = document.getElementById('chart');
 const ctx2 = document.getElementById('chart2');
 const ctx3 = document.getElementById('chart3');
 const ctx4 = document.getElementById('chart4');
+charts = [ctx, ctx2, ctx3, ctx4];
+window.addEventListener('beforeprint', (event) => {
+  console.log('Before print');
+});
 console.log('holaa')
   new Chart(ctx, {
     type: 'bar',
@@ -28,7 +32,7 @@ console.log('holaa')
     data: {
       labels: ['Proteinas', 'Carbohidratos', 'Fibra', 'Grasas', 'Vitaminas', 'Minerales'],
       datasets: [{
-        label: 'Comidas',
+        label: 'Gramos Consumidos /semana',
         data: [28, 22, 32, 40, 18, 20, 30],
         backgroundColor: [
             '#2f0',
@@ -43,7 +47,8 @@ console.log('holaa')
       }]
     },
     options: {
-    
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true
@@ -51,3 +56,9 @@ console.log('holaa')
       }
     }
   });
+  function beforePrintHandler () {
+    for (let id in charts) {
+        charts[id].resize();
+    }
+    
+}
