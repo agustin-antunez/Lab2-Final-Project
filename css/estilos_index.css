@@ -1,3 +1,16 @@
+:root{
+    --Color-gris_claro: #DADADA; 
+    --Color-blanco-gris: #F0F0F2;
+    --Color-gris-oscuro: #3d3d3d;
+    --Color-negro: #000000; 
+    --Color-negro_medio: #161616;
+    --Color-negro_medio-claro:#131313;
+    --Color-coral: #FF0951;
+    --Color-rojo: #FF0023;
+    --Color-violeta: #542BE3;
+    --Color-azul-corp:#006eff;
+    
+}
 main{
     display: flex;
     flex-wrap: wrap;
@@ -5,33 +18,57 @@ main{
     justify-content: center;
     align-content: center;
     padding: 20px;
-    gap: 20px;
 }
 main > div{
     display: flex;
-    grid-auto-flow: dense;
+    margin: 20px;
     justify-content: center;
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: inset 2px 2px 80px rgba(255, 255, 255, 0.123);
-    border: 1px outset #9c5af1;
+    /* border: 1px outset #9c5af1; */
     border-radius: 20px;
-    min-width: 300px;
     flex-grow: 1;
-    height: 250px;
+    height: 300px;
+    min-width: 300px;
+    max-width: 800px;
     background-color: rgba(51, 51, 51, 0.425);
     position: relative;
 }
-#main-charts{
+main > div > span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size:  2rem;
+    font-family: monospace;
+    color: var(--Color-coral);
+    
+}
+main > div > div{
+    text-align: center;
+    flex-grow: 1;
+    font-size: 2.4rem;
+    font-family: monospace;
+    color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+}
+main > div > div > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.iconFace{
+    width: min-content;
+    font-size: 6.5rem;
+}
+
+/* #main-charts{
     display: flex;
     justify-content: space-evenly;
     flex-basis: none;
     max-width: none;
-    width: 100%;
-}
-canvas{
-    margin: 0;
-    padding: 0;
-    object-fit: contain;
-}
+    width: 700px;
+} */
