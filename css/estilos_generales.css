@@ -15,8 +15,9 @@ a:visited, a:link{
     --Color-gris_claro: #DADADA; 
     --Color-blanco-gris: #F0F0F2;
     --Color-gris-oscuro: #3d3d3d;
-    --Color-negro: #050505; 
-    --Color-negro_medio: #0D0D0D;  
+    --Color-negro: #000000; 
+    --Color-negro_medio: #161616;
+    --Color-negro_medio-claro:#131313;
     --Color-coral: #FF0951;
     --Color-rojo: #FF0023;
     --Color-violeta: #542BE3;
@@ -24,8 +25,7 @@ a:visited, a:link{
     
 }
 body{
-    padding: 0;
-    margin: 0;
+    background: var(--Color-negro);
     
 }
 header{

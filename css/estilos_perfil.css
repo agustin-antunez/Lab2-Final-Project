@@ -1,13 +1,10 @@
 /*GENERAL*/
 
-body {
-    background: var(--Color-negro);
-}
-
 #perfil {
     display: flex;
     width: 100%;
     height: 100%;
+    background-color: var(--Color-negro_medio);
 }
 
 input {
@@ -26,14 +23,21 @@ label {
 
 /*FUNCIONALIDADES*/
 #funtions {
+    display: flex;
+    flex-wrap: wrap;
     width: 25%;
-    height: 100;
-    padding: 20px;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
     border: 1px solid #ffaf03;
+    border-radius: 10px;
+    background-color: var(--Color-negro_medio-claro);
 }
 
 .funtions-section {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 20px;
     border: 1px solid #ff7403;
@@ -41,6 +45,8 @@ label {
 
 .title2 > h2 {
     font-size: 18pt;
+    text-align: center;
+    margin-top: 20px;
     color: var(--Color-gris-oscuro);
 }
 
@@ -83,6 +89,7 @@ width: 50%;
 .fun-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 50px;
 }
 
@@ -123,7 +130,7 @@ width: 50%;
     flex-direction: column;
     gap: 20px;
     padding: 40px;
-    background-color: var(--Color-negro_medio);
+    background-color: var(--Color-negro_medio-claro);
     width: 70%;
     height: auto;
     border-radius: 10px;
@@ -283,17 +290,19 @@ input:checked + .radio-style> #undefined {
    color: #ff7403;
 }
 
-.training {
+.training-checkbox {
     width: 100%;
     height: auto;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    *border:1px solid #006eff;
+    margin-bottom: 20px;
 
 }
 
-.training > span {
+.training-checkbox > span {
     text-align: center;
     margin: 10px;
 }
@@ -302,6 +311,7 @@ input:checked + .radio-style> #undefined {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .checkbox-container {
@@ -318,6 +328,7 @@ input:checked + .radio-style> #undefined {
     z-index: 20;
     opacity: 0;
 }
+
 
 .checkbox-container .check-style {
     display: flex;
