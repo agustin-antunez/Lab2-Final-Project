@@ -12,49 +12,55 @@
     </head>
     <body>
         <header>
-            <button><i class="fa-solid fa-circle-arrow-left"></i></button>
-            <div>
-                <h1>Turbo Fitness</h1>
-            </div>
-                <button><i class="fa-solid fa-circle-arrow-right"></i></button>
-        </header>
-        <div id="view-container">
             <nav>
-                <a href="index.html"><i class="fa-solid fa-chart-line"></i></a>
-                <a href="perfil.html"><i class="fa-solid fa-circle-user"></i></a>
-                <a href=""><i class="fa-solid fa-bell"></i></a>
-                <a href=""><i class="fa-solid fa-user-group"></i></a>
-                <a href=""><i class="fa-regular fa-calendar-days"></i></a>
-                <a href=""><i class="fa-solid fa-ranking-star"></i></a>
-                <a href=""><i class="fa-solid fa-gear"></i></a>
+                <button><i class="fa-solid fa-circle-arrow-left"></i></button>
+                <div>
+                <h1>Turbo Fitness</h1>
+                </div>
+                <button><i class="fa-solid fa-circle-arrow-right"></i></button>
             </nav>
+        </header>
+
             <main>
-                <div id="main-charts">
-                    <canvas id="chart"></canvas>
+
+                <div class="navbar-side">
+                    <a href="index.html"><i class="fa-solid fa-chart-line"></i></a>
+                    <a href="perfil.html"><i class="fa-solid fa-circle-user"></i></a>
+                    <a href=""><i class="fa-solid fa-bell"></i></a>
+                    <a href=""><i class="fa-solid fa-user-group"></i></a>
+                    <a href=""><i class="fa-regular fa-calendar-days"></i></a>
+                    <a href=""><i class="fa-solid fa-ranking-star"></i></a>
+                    <a href=""><i class="fa-solid fa-gear"></i></a>
                 </div>
-                <div>
-                    <canvas id="chart2"></canvas>
-                </div>
-                <div>
-                    <canvas id="chart3"></canvas>
-                </div>
-                <div>
-                    <span>Estado de animo</span> 
-                    <div>
-                        <div>
-                            <p>50%</p>
-                            <i class="fa-solid fa-face-laugh iconFace" style="color: greenyellow;"></i>
-                        </div>
-                        <div>
-                            <p>30%</p>
-                            <i class="fa-solid fa-face-meh iconFace" style="color: orange;"></i></i>
-                        </div>
-                        <div>
-                            <p>20%</p>
-                            <i class="fa-solid fa-face-tired iconFace" style="color: red;"></i>
+
+                <section class="dashboard">
+                    <div class="bars">
+                        <canvas id="chart"></canvas>
+                    </div>
+                    <div class="cake">
+                        <canvas id="chart2"></canvas>
+                    </div>
+                    <div class="estadistic">
+                        <canvas id="chart3"></canvas>
+                    </div>
+                    <div class="mood">
+                        <span>Estado de animo</span> 
+                        <div class="mood-container">
+                            <div class="happy">
+                                <p>50%</p>
+                                <i class="fa-solid fa-face-laugh iconFace" style="color: greenyellow;"></i>
+                            </div>
+                            <div class="mid">
+                                <p>30%</p>
+                                <i class="fa-solid fa-face-meh iconFace" style="color: orange;"></i></i>
+                            </div>
+                            <div class="sad">
+                                <p>20%</p>
+                                <i class="fa-solid fa-face-tired iconFace" style="color: red;"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
         <footer>
