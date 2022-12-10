@@ -35,9 +35,10 @@ a:visited, a:link{
 }
 body{
     background: var(--Color-negro);
+    width: 100%;
     
 }
-header{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,40 +57,43 @@ h1{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-header > button{
-    font-size: 4rem;
+nav > button{
+    font-size: 2rem;
     background-color: transparent;
     border: none;
     color: #FFF;
     
 }
-#view-container{
+
+main {
     display: flex;
-    min-height: 90vh;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Color-negro_medio);
 }
-nav{
+
+
+.navbar-side{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 50px;
+    width: 50px;
+    gap: 50px;
+    *flex-basis: 50px;
     color: #0C0D0F;
     text-decoration: none;
     background-color: var(--Color-blanco-gris);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.247);
     z-index: 1;
 }
-nav > a{
+
+.navbar-side > a{
     margin: 1rem;
-    box-sizing: border-box;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: #0C0D0F;
     width: min-content;
 }
-main{
-    flex-grow: 1;
-    background-color: var(--Color-negro_medio);
-    box-shadow: inset 0px 0px 200px 2px rgba(54, 101, 255, 0.05)
-}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -140,22 +144,34 @@ footer{
     *{
         transition: all 1s;
     }
-    header{
+    nav{
         font-size: 1.3rem;
     }
-    #view-container{
-        flex-direction: column;
+
+    main {
+        flex-wrap: wrap;
     }
+<<<<<<< HEAD
     main{
         flex-direction: column;
     }
     nav{
+=======
+
+    .navbar-side{
+        width: 100%;
+>>>>>>> 6d3a0152fee896d2b3db6e63adbcb03e08c0ecc3
         flex-direction: row;
-        justify-content: space-evenly
+        justify-content: space-around;
+        height: 50px;
         
     }
+<<<<<<< HEAD
     main > *{
+=======
+    /*main > div{
+>>>>>>> 6d3a0152fee896d2b3db6e63adbcb03e08c0ecc3
         min-width: 100% !important;
-        height: 500px !important;
-    }
+        height: 50px !important;
+    }*/
 }

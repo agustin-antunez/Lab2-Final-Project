@@ -10,14 +10,18 @@
     </head>
     <body>
         <header>
-            <button><i class="fa-solid fa-circle-arrow-left"></i></button>
-            <div>
-                <h1>Turbo Fitness</h1>
-            </div>
-            <button><i class="fa-solid fa-circle-arrow-right"></i></button>
-        </header>
-        <div id="view-container">
             <nav>
+                <button><i class="fa-solid fa-circle-arrow-left"></i></button>
+                <div>
+                <h1>Turbo Fitness</h1>
+                </div>
+                <button><i class="fa-solid fa-circle-arrow-right"></i></button>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="navbar-side">
                 <a href="index.html"><i class="fa-solid fa-chart-line"></i></a>
                 <a href="perfil.html"><i class="fa-solid fa-circle-user"></i></a>
                 <a href=""><i class="fa-solid fa-bell"></i></a>
@@ -25,207 +29,272 @@
                 <a href=""><i class="fa-regular fa-calendar-days"></i></a>
                 <a href=""><i class="fa-solid fa-ranking-star"></i></a>
                 <a href=""><i class="fa-solid fa-gear"></i></a>
-            </nav>
-            <main id="perfil">
-                <aside id="funtions">
-                    <div class="fun-container">
-                        <div class="title2">
-                            <h2>Funcionalidades</h2>
-                        </div>
-                       
-    
-                        <div class="funtions-section">
-                            <div class="title-line">
-                                <h3 class="title3">Alimentacion</h3>
-                                <div class="line">
-                                </div>
-                            </div>
-                            <div class="funtions__widgets">
-                                <a href="#"><button id="food-register">Registro de comidas</button></a>
-                                <a href="#"><button id="food-list">Armar alimentacion</button></a>
-                                <a href="#"><button id="imc">Calculadora IMC</button></a>
-                                <a href="#"><button>Consejos</button></a>
-                            </div>
-                        </div>
-    
-                        <div class="funtions-section">
-                            <div class="title-line">
-                                <h3 class="title3 title3--color">Rutina</h3>
-                                <div class="line line--color">
-                                </div>
-                            </div>
-                            <div class="funtions__widgets">
-                                <a href="#"><button>Armar rutina</button></a>
-                                <a href="#"><button>Modificar rutina</button></a>
-                                <a href="#"><button>Eliminar rutina</button></a>
-                            </div>
-                        </div>
-    
-    
-                        <a href=""><button>Conectar dispositivo</button></a>
-    
+            </div>
+
+            <aside id="funtions">
+                <div class="fun-container">
+                    <div class="title2">
+                        <h2>Funcionalidades</h2>
                     </div>
-                </aside>
-    
-                <section id="formularios">
-                    <div class="form-container">
-                        <div class="title-container">
-                            <div class="title-p1">
-                                <h2 class="title">Informacion Personal</h2>
-                            </div>
-                            <div class="title__icons">
-                                <i id="edit" title="editar" class="fa-regular fa-pen-to-square"></i>
-                                <i id="delete" title="Eliminar" class="fa-solid fa-xmark"></i>
+                    
+
+                    <div class="funtions-section">
+                            <h3 class="title3">Alimentacion</h3>
+                        <div class="funtions__widgets">
+                            <a href="#"><button id="food-register">Registro de comidas</button></a>
+                            <a href="#"><button id="food-list">Armar alimentacion</button></a>
+                            <a href="#"><button id="imc">Calculadora IMC</button></a>
+                            <a href="#"><button id="tips">Consejos</button></a>
+                        </div>
+                    </div>
+
+                    <div class="sep"></div>
+
+                    <div class="funtions-section">
+                            <h3 class="title3 title3--color">Rutina</h3>
+                        <div class="funtions__widgets">
+                            <a href="#"><button id="rutine">Armar rutina</button></a>
+                            <a href="#"><button id="mod-rutine">Modificar rutina</button></a>
+                            <a href="#"><button id="del-rutine">Eliminar rutina</button></a>
+                        </div>
+                    </div>
+
+                    <div class="sep"></div>
+
+                    <div class="funtions-section">
+                            <h3 class="title3 title3--color2">Dispositivos conectados</h3>
+                        <div class="devices">
+                                <div class="device-container">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <span>Iphone 14 Pro Max</span>
+                                </div>
+                                <div class="device-container">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span>Apple Watch Series 7</span>
+                                </div>
+                                <div class="add-device">
+                                    <div title="Añadir dispositivo" class="icon-plus">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+            <section id="formularios">
+                <div class="form-container">
+                    <div class="title-container">
+                        <div class="title-p1">
+                            <h2 class="title">Informacion Personal</h2>
+                        </div>
+                        <div class="title__icons">
+                            <i id="edit" title="editar" class="fa-regular fa-pen-to-square"></i>
+                            <i id="delete" title="Eliminar" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                        
+                    <form class="form-flex" action="#">
+                        <label for="name">Nombre</label><br>
+                        <input class="input-style" type="text" name="nombre" id="name" placeholder="Ej: Lionel"><br><br>
+
+                        <label for="surname">Apellido</label><br>
+                        <input class="input-style" type="text" name="apellido" id="surname" placeholder="Ej: Messi"><br><br>
+
+                        <div class="gender">
+                            <span>Genero</span><br><br>
+                            <div class="gender__container">
+
+                                <div class="input-container"> 
+                                    <input type="radio" title="Masculino" id="male" name="gender" required>
+                                    <div class="radio-style">
+                                        <i id="male" class="fa-solid fa-mars"></i>
+                                    </div>
+                                </div>
+
+                                <div class="input-container"> 
+                                    <input type="radio" title="Femenino" id="female" name="gender" required>
+                                    <div class="radio-style">
+                                        <i id="female" class="fa-solid fa-venus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="input-container"> 
+                                    <input type="radio" title="Indefinido" name="gender" required>
+                                    <div class="radio-style">
+                                        <i id="undefined" class="fa-solid fa-transgender"></i>
+                                    </div>
+                                </div>
+                                    
                             </div>
                         </div>
-                          
+
+                        <label for="birth">Fecha de nacimiento</label><br>
+                        <input class="input-style" type="date" id="birth" name="Fecha de nacimiento" required><br><br>
+                        
+                        <label for="age">Edad</label><br>
+                        <input class="input-style" type="number" name="Edad" id="age" max="99" required><br><br>
+
+                        <div class="form_number">
+                            <label for="weight">Peso</label><br>
+                            <input class="input-style" type="number" name="Peso" id="weight" required>
+                            <label for="weight">Kg</label><br><br>
+                        </div>
+                        
+                        <div class="form_number">
+                            <label for="height">Altura</label><br>
+                            <input class="input-style" type="number" name="Altura" id="height" min="100" max="300" required>
+                            <label for="height">cm</label><br>
+                        </div>
+
+                        <div class="save-button">
+                            <input type="submit" value="Guardar cambios">
+                        </div>
+                        
+                    </form>
+                </div>
+
+                <div class="form-container">
+                    <div class="title-container">
+                        <div class="title-p1">
+                            <h2 class="title title--color">Entrenamiento</h2>
+                        </div>
+                        <div class="title__icons">
+                            <i id="edit" title="editar" class="fa-regular fa-pen-to-square"></i>
+                            <i id="delete" title="Eliminar" class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
                         <form class="form-flex" action="#">
-                            <label for="name">Nombre</label><br>
-                            <input class="input-style" type="text" name="nombre" id="name" placeholder="Ej: Lionel"><br><br>
-    
-                            <label for="surname">Apellido</label><br>
-                            <input class="input-style" type="text" name="apellido" id="surname" placeholder="Ej: Messi"><br><br>
-    
-                            <div class="gender">
-                                <span>Genero</span><br><br>
-                                <div class="gender__container">
-    
-                                    <div class="input-container"> 
-                                        <input type="radio" title="Masculino" id="male" name="gender" required>
-                                        <div class="radio-style">
-                                            <i id="male" class="fa-solid fa-mars"></i>
+
+                            <div class="training-checkbox">
+                                <span>Entrenamiento favorito</span>
+                                <div class="checkboxes">
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="HIIT" id="hiit">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-fire-flame-curved"></i>
+                                            <label for="hiit">HIIT</label>
                                         </div>
                                     </div>
-    
-                                    <div class="input-container"> 
-                                        <input type="radio" title="Femenino" id="female" name="gender" required>
-                                        <div class="radio-style">
-                                            <i id="female" class="fa-solid fa-venus"></i>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="HIIT" id="cardio">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <label for="cardio">Cardio</label>
                                         </div>
                                     </div>
-    
-                                    <div class="input-container"> 
-                                        <input type="radio" title="Indefinido" name="gender" required>
-                                        <div class="radio-style">
-                                            <i id="undefined" class="fa-solid fa-transgender"></i>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="gym" id="muscle">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-dumbbell"></i>
+                                            <label for="muscle">Musculacion</label>
                                         </div>
                                     </div>
-                                        
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="crossfit" id="crossfit">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-bolt"></i>
+                                            <label for="crossfit">CrossFit</label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="ciclism" id="ciclism">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-person-biking"></i>
+                                            <label for="ciclism">Ciclismo</label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="swim" id="swiming">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-person-swimming"></i>
+                                            <label for="swiming">Natacion</label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" name="sleep" id="sleep">
+                                        <div class="check-style">
+                                            <i class="fa-solid fa-bed"></i>
+                                            <label for="sleep">Ninguno</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-    
-                            <label for="birth">Fecha de nacimiento</label><br>
-                            <input class="input-style" type="date" id="birth" name="Fecha de nacimiento" required><br><br>
-                            
-                            <label for="age">Edad</label><br>
-                            <input class="input-style" type="number" name="Edad" id="age" max="99" required><br><br>
-    
-                            <div class="form_number">
-                                <label for="weight">Peso</label><br>
-                                <input class="input-style" type="number" name="Peso" id="weight" required>
-                                <label for="weight">Kg</label><br><br>
+                            <div class="sep"></div>
+                            <div class="selection">
+                                <span>Entrenamiento diario semanal</span>
+                                <div class="selection-container">
+                                    <select name="rutine">
+                                        <option selected disabled>Elige una opcion</option>
+                                        <option value="-3">-3 veces</option>
+                                        <option value="3-5">3-5 veces</option>
+                                        <option value="nothing">Nunca</option>
+                                    </select>
+
+                                </div>
                             </div>
-                            
-                            <div class="form_number">
-                                <label for="height">Altura</label><br>
-                                <input class="input-style" type="number" name="Altura" id="height" min="100" max="300" required>
-                                <label for="height">cm</label><br>
-                            </div>
-    
-                            <div class="save-button">
-                                <input type="submit" value="Guardar cambios">
-                            </div>
-                            
+                            <div class="sep"></div>
+
                         </form>
                     </div>
-    
-                    <div class="form-container">
-                        <div class="title-container">
-                            <div class="title-p1">
-                                <h2 class="title title--color">Entrenamiento</h2>
+                </div>
+            </section>
+
+            <section id="aditional-info">
+                <div class="calendar">
+                    <table class="calendar-container">
+                        <tr class="calendar-title">
+                            <th colspan="7">Calendario de entrenamiento
+                            <i id="edit" title="editar" class="fa-regular fa-pen-to-square"></i>
+                            </th>
+                        </tr>
+                        <tr class="calendar-days">
+                            <th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th><th>Sabado</th><th>Domingo</th>
+                        </tr>
+                        <tr>
+                            <td>Musculacion</td><td rowspan="2">Cardio</td><td rowspan="2">Ninguno</td><td>Musculacion</td><td>Musculacion</td><td rowspan="2">Ciclismo</td><td rowspan="2">Ninguno</td>
+                        </tr>
+                        <tr>
+                            <td>Futbol</td><td>Cardio</td><td>Natacion</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="user-info">
+                    <div class="sep"></div>
+                    <div class="info-container">
+                        <h3 class="title3 title3--color">Seguimiento</h3>
+                        <div class="tracing">
+                            <div class="water water--color">
+                                <i class="fa-solid fa-glass-water"></i>
+                            <input type="number" min="0" value="0">
                             </div>
-                            <div class="title__icons">
-                                <i id="edit" title="editar" class="fa-regular fa-pen-to-square"></i>
-                                <i id="delete" title="Eliminar" class="fa-solid fa-xmark"></i>
+
+                            <div class="burn burn--color">
+                                <i class="fa-solid fa-fire-flame-curved"></i>
+                                <input type="number" value="0" id="burn">
+                                <label for="burn">Kcal</label>
+                            </div>
+
+                            <div class="calories calories--color">
+                                <i class="fa-solid fa-apple-whole"></i>
+                                <input type="number" value="0" id="burn">
+                                <label for="burn">Kcal</label>
+                            </div>
+
+                            <div class="protein protein--color">
+                                <i class="fa-solid fa-egg"></i>
+                                <input type="number" value="0" id="protein">
+                                <label for="protein">gramos</label>
                             </div>
                         </div>
-                            <form class="form-flex" action="#">
-    
-                                <div class="training-checkbox">
-                                    <span>Entrenamiento favorito</span>
-                                    <div class="checkboxes">
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="HIIT" id="hiit">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-fire-flame-curved"></i>
-                                                <label for="hiit">HIIT</label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="HIIT" id="cardio">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-heart"></i>
-                                                <label for="cardio">Cardio</label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="gym" id="muscle">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-dumbbell"></i>
-                                                <label for="muscle">Musculacion</label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="crossfit" id="crossfit">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-bolt"></i>
-                                                <label for="crossfit">CrossFit</label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="ciclism" id="ciclism">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-person-biking"></i>
-                                                <label for="ciclism">Ciclismo</label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="swim" id="swiming">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-person-swimming"></i>
-                                                <label for="swiming">Natacion</label>
-                                            </div>
-                                        </div>
-                                        <div class="checkbox-container">
-                                            <input type="checkbox" name="sleep" id="sleep">
-                                            <div class="check-style">
-                                                <i class="fa-solid fa-bed"></i>
-                                                <label for="sleep">Ninguno</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="selection">
-                                    <span>Entrenamiento diario semanal</span>
-                                    <div class="selection-container">
-                                        <select name="rutine" id="rutine">
-                                            <option selected disabled>Elige la opcion que corresponda</option>
-                                            <option value="-3">-3 veces</option>
-                                            <option value="3-5">3-5 veces</option>
-                                            <option value="nothing">Nunca</option>
-                                        </select>
-    
-                                    </div>
-                                </div>
-    
-    
-                            </form>
-                        </div>
+                        
                     </div>
-                </section>
-            </main>
-        </div>
+
+                </div>
+            </section>
+
+
+        </main>
         <footer>
             <div>
                 <div id="footer-links">

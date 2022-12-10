@@ -1,12 +1,5 @@
 /*GENERAL*/
 
-#perfil {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: var(--Color-negro_medio);
-}
-
 input {
     color: var(--Color-gris_claro);
 }
@@ -21,6 +14,14 @@ label {
     color: var(--Color-gris_claro);
 }
 
+.sep {
+    margin: 0px auto 0px auto;
+    width: 50%;
+    height: 1px;
+    background-color: var(--Color-gris-oscuro);
+
+}
+
 /*FUNCIONALIDADES*/
 #funtions {
     display: flex;
@@ -28,19 +29,21 @@ label {
     width: 25%;
     justify-content: center;
     height: auto;
-    padding: 10px;
-    margin: 10px 0px 10px 10px;
-    border: 1px solid #ffaf03;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid var(--Color-gris-oscuro);
     border-radius: 10px;
     background-color: var(--Color-negro_medio-claro);
 }
 
 .funtions-section {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    padding: 10px;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    border: 1px solid #ff7403;
+    transition: all 300ms;
 }
 
 .title2 > h2 {
@@ -51,39 +54,20 @@ label {
 }
 
 .title3 {
+    width: 100%;
     font-size: 12pt;
     color: #00ff80;
-}
-
-.title-line {
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-    width: 50%;
-}
-
-.line {
-    width: 0%;
-    height: 2px;
-    background-color: #00ff80;
-    transition: width 600ms;
-}
-
-.line--color {
-    background-color: #ffaf03;
-}
-
-.title-line:hover > .line {
-width: 50%;
-}
-
-.title-line:hover > .line--color {
-    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
 .title3--color {
     color: #ffaf03;
+}
+
+.title3--color2 {
+    color: var(--Color-violeta);
 }
 
 .fun-container {
@@ -111,18 +95,84 @@ width: 50%;
 
 }
 
+#food-register, #food-list, #imc, #tips {
+    background-color: transparent;
+    color: var(--Color-gris_claro);
+    border: 1px solid var(--Color-gris-oscuro);
+    transition: all 300ms ease-in-out;
+}
+
+#food-register:hover, #food-list:hover, #imc:hover, #tips:hover {
+    background-color: #00974c;
+    border: none;
+}
+
+#rutine, #mod-rutine, #del-rutine {
+    background-color: transparent;
+    color: var(--Color-gris_claro);
+    border: 1px solid var(--Color-gris-oscuro);
+    transition: all 300ms ease-in-out;
+}
+
+#rutine:hover, #mod-rutine:hover, #del-rutine:hover {
+    background-color:#c28400;
+    border: none;
+}
+
+
+.devices {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add-device {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-plus {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-gris-oscuro);
+    border-radius: 50%;
+}
+
+.icon-plus:hover {
+    background-color: var(--Color-violeta);
+}
+
+.device-container {
+    display: flex;
+    gap: 10px;
+    color: var(--Color-gris_claro);
+
+}
+
+.device-container span {
+    font-weight: 100;
+}
+
 /*FORMULARIOS*/
 
 #formularios {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
+    margin: 10px 10px 10px 10px;
     gap: 20px;
-    width: 50%;
+    width: 30%;
     height: auto;
-    *border: 1px solid var(--Color-azul-corp);
 }
 
 .form-container {
@@ -131,10 +181,10 @@ width: 50%;
     gap: 20px;
     padding: 40px;
     background-color: var(--Color-negro_medio-claro);
-    width: 70%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
-    *border: 1px solid var(--Color-coral);
+    border: 1px solid var(--Color-gris-oscuro);
 }
 
 /*ESTILOS TITULO*/
@@ -266,6 +316,8 @@ input:checked + .radio-style> #undefined {
     transition: width 300ms ease-in;
 }
 
+
+
 .save-button {
     display: flex;
     width: 100%;
@@ -310,7 +362,8 @@ input:checked + .radio-style> #undefined {
 .checkboxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     gap: 20px;
 }
 
@@ -351,4 +404,240 @@ input:checked + .radio-style> #undefined {
 input:checked + .check-style > i, 
 input:checked + .check-style > label {
     color: #ff7403;
+}
+
+/*CONTENEDOR SELECTION*/
+
+.selection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.selection > span {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.selection-container {
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    margin-top: 10px;
+    padding: 5px;
+    width: 50%;
+    background-color:var(--Color-gris-oscuro);
+    color:var(--Color-gris_claro);
+    border: none;
+    border-radius: none;
+}
+
+/*SECCION - INFORMACION DE USUARIO*/
+
+#aditional-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 700px;
+    height: 800px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*ESTILOS DE CALENDARIO*/
+
+.calendar {
+    width: 100%;
+    height: 300px;
+}
+
+.calendar-container {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: var(--Color-gris_claro);
+    font-size: 10pt;
+}
+
+td {
+    border: 1px solid var(--Color-gris-oscuro);
+    padding: 10px;
+}
+
+.calendar-title th {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;   
+    background-color: var(--Color-coral);
+}
+
+.calendar-title i {
+    margin-left: 10px;
+}
+
+.calendar-title:hover {
+    color: var(--Color-gris_claro);
+}
+
+.calendar-days th {
+    background-color: #006eff;
+}
+
+/*INFORMACION DE USUARIO*/
+
+.user-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.tracing {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.water,.burn, .calories, .protein {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    color: var(--Color-gris_claro);
+    border-radius: 10px;
+}
+
+.water--color {
+    background-color: var(--Color-azul-corp);
+}
+
+.burn--color{
+    background-color: #ff7403;
+}
+
+.calories, .calories--color {
+    background-color: var(--Color-violeta);
+}
+
+.protein, .protein--color {
+    background-color: var(--Color-rojo);
+}
+
+
+.water input, .burn input, .calories input, .protein input{
+    background-color: var(--Color-negro_medio);
+    padding: 5px;
+    font-size: 12pt;
+    font-weight: 700;
+    border: hidden;
+    outline: none;
+    color: var(--Color-gris_claro);
+    background-color: transparent;
+    width: 55px;
+}
+
+.water i::after {
+    content: "Vasos de agua:";
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+
+.burn i::after {
+    content: "Grasas quemadas:";
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+.calories i::after {
+    content: "Calorias:";
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+.protein i::after {
+    content: "Proteinas:";
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+/*MEDIA QUERYS*/
+
+@media  only screen and (max-width: 1200px){
+
+
+    #funtions, .funtions-section, #formularios {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .form-flex {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_number {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .funtions__widgets {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .funtions__section, .devices {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title3--color2 {
+        margin-bottom: 0;
+    }
+    
+    #aditional-info {
+        width: 100%;
+    }
 }
