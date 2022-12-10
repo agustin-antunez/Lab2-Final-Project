@@ -1,5 +1,5 @@
-/*GENERAL*/
 
+/*GENERAL*/
 input {
     color: var(--Color-gris_claro);
 }
@@ -603,8 +603,15 @@ td {
 
 @media  only screen and (max-width: 1200px){
 
-
+    .navbar-side{
+        bottom: none;
+        top: none;
+        margin-top: 0;
+        padding: 0;
+        height: 5vh;
+    }
     #funtions, .funtions-section, #formularios {
+        margin: 20px;
         flex-direction: row;
         width: 100%;
     }
