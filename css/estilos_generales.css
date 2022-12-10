@@ -146,12 +146,15 @@ footer{
     #view-container{
         flex-direction: column;
     }
+    main{
+        flex-direction: column;
+    }
     nav{
         flex-direction: row;
         justify-content: space-evenly
         
     }
-    main > div{
+    main > *{
         min-width: 100% !important;
         height: 500px !important;
     }
