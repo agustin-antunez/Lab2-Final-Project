@@ -1,5 +1,6 @@
 /*GENERAL*/
 * {
+    transition: all 1s;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -44,14 +45,14 @@ nav{
     align-items: center;
     height: 10vh;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--Color-negro);
     font-size: 3rem;
     font-family: monospace;
     color: #FFF;
 }
 h1{
-    letter-spacing: 20px;
+    letter-spacing: 10px;
     animation-name: header_animation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -62,7 +63,10 @@ nav > button{
     background-color: transparent;
     border: none;
     color: #FFF;
-    
+    margin: 0;
+}
+nav > a{
+    margin: 0;
 }
 
 main {
@@ -77,8 +81,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     width: 50px;
-    gap: 50px;
     *flex-basis: 50px;
     color: #0C0D0F;
     text-decoration: none;
@@ -88,7 +92,6 @@ main {
 }
 
 .navbar-side > a{
-    margin: 1rem;
     font-size: 1.5rem;
     color: #0C0D0F;
     width: min-content;
@@ -132,17 +135,17 @@ footer{
 }
 @keyframes header_animation {
     from{
-        letter-spacing: 25px;
+        letter-spacing: 6px;
         text-shadow: #FFF 1px 1px 5px;
     }
     to{
-        letter-spacing: 20px;
+        letter-spacing: 5px;
         text-shadow: #FFF 0px 0px 0px;
     }
 }
 @media screen and (max-width: 1200px){
-    *{
-        transition: all 1s;
+    h1{
+        *font-size: 1rem;
     }
     nav{
         font-size: 1.3rem;
@@ -151,27 +154,18 @@ footer{
     main {
         flex-wrap: wrap;
     }
-<<<<<<< HEAD
-    main{
-        flex-direction: column;
+    .dashboard{
+        margin: 0 !important;
+        padding: 0 !important;
     }
-    nav{
-=======
-
     .navbar-side{
         width: 100%;
->>>>>>> 6d3a0152fee896d2b3db6e63adbcb03e08c0ecc3
         flex-direction: row;
         justify-content: space-around;
         height: 50px;
         
     }
-<<<<<<< HEAD
-    main > *{
-=======
-    /*main > div{
->>>>>>> 6d3a0152fee896d2b3db6e63adbcb03e08c0ecc3
+    .dashboard > *{
         min-width: 100% !important;
-        height: 50px !important;
-    }*/
+    }
 }
