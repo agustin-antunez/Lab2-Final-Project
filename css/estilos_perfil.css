@@ -37,6 +37,7 @@ label {
 
 .funtions-section {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 10px;
     flex-direction: column;
@@ -53,6 +54,7 @@ label {
 }
 
 .title3 {
+    width: 100%;
     font-size: 12pt;
     color: #00ff80;
     text-align: center;
@@ -125,10 +127,16 @@ label {
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-
 }
 
 .add-device {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-plus {
     width: 1.5em;
     height: 1.5em;
     display: flex;
@@ -138,7 +146,7 @@ label {
     border-radius: 50%;
 }
 
-.add-device:hover {
+.icon-plus:hover {
     background-color: var(--Color-violeta);
 }
 
@@ -307,6 +315,8 @@ input:checked + .radio-style> #undefined {
     *background-color: var(--Color-negro);
     transition: width 300ms ease-in;
 }
+
+
 
 .save-button {
     display: flex;
@@ -589,3 +599,45 @@ td {
     margin-left: 10px;
 }
 
+/*MEDIA QUERYS*/
+
+@media  only screen and (max-width: 1200px){
+
+
+    #funtions, .funtions-section, #formularios {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .form-flex {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_number {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .funtions__widgets {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .funtions__section, .devices {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .title3--color2 {
+        margin-bottom: 0;
+    }
+    
+    #aditional-info {
+        width: 100%;
+    }
+}
