@@ -52,6 +52,7 @@ nav{
     color: #FFF;
 }
 h1{
+    text-align: center;
     letter-spacing: 10px;
     animation-name: header_animation;
     animation-duration: 4s;
@@ -110,7 +111,7 @@ footer{
     align-items: center;
     z-index: 2;
     box-sizing: border-box;
-    padding: .5em .5em;
+    padding: .9em .9em;
     text-align: center;
     font-size: 1rem;
     font-family: monospace;
@@ -130,6 +131,9 @@ footer{
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+}
+#utn-logo{
+    width: 60%;
 }
 @keyframes footer-links_animation {
     from{
