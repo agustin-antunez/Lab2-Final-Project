@@ -30,6 +30,8 @@
 }
 .dashboard > *{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     min-width: 300px;
     flex-grow: 1;
@@ -37,8 +39,9 @@
     padding: 20px;
     background-color: #202020;
 }
-.dashboard > * > *{
-    width: 100%;
+.dashboard > * > img{
+    height: 100%;
+    object-fit: contain;
 }
 .bars{
     width: 100%;
