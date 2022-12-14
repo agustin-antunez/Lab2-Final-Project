@@ -316,8 +316,6 @@ input:checked + .radio-style> #undefined {
     transition: width 300ms ease-in;
 }
 
-
-
 .save-button {
     display: flex;
     width: 100%;
@@ -454,6 +452,7 @@ select {
 .calendar {
     width: 100%;
     height: 300px;
+    display: block;
 }
 
 .calendar-container {
@@ -491,6 +490,10 @@ td {
 .calendar-days th {
     background-color: #006eff;
 }
+
+.mobile-table {
+        display: none;
+    }
 
 /*INFORMACION DE USUARIO*/
 
@@ -611,7 +614,6 @@ td {
         height: 5vh;
     }
     #funtions, .funtions-section, #formularios {
-        margin: 20px;
         flex-direction: row;
         width: 100%;
     }
@@ -647,4 +649,49 @@ td {
     #aditional-info {
         width: 100%;
     }
+
+}
+
+@media (max-width: 768px) {
+    .calendar, .calendar-container {
+        display: none;
+    }
+
+    .mobile-table {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid var(--Color-gris-oscuro);
+        border-radius: 5px;
+        margin: 0px auto 0px auto;
+    }
+
+    .table__title {
+        text-align: center;
+        background-color: var(--Color-coral);
+        color: var(--Color-gris_claro);
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .mobile-table > * {
+        padding: 5px;
+    }
+
+    .table__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--Color-gris-oscuro) ;
+    }
+
+    .row__title {
+        color: #ccc;
+    }
+
+    .row__content {
+        color: var(--Color-gris_claro);
+        padding: 5px;
+    }
+
 }
